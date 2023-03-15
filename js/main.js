@@ -6,7 +6,7 @@ createApp({
     data() {
         return {
             title: " Vue To Do List",
-            
+
             newTodo: "",
 
             todos: [
@@ -38,14 +38,15 @@ createApp({
         }
     },
 
-    /* eliminare dalla lista */
+   
     methods: {
-        removeTodo(index){
+         /* eliminare dalla lista */
+        removeTodo(index) {
             this.todos.splice(index, 1);
         },
 
-        /* eliminare dalla lista */
-        addTodo(){
+        /* aggiungere alla lista */
+        addTodo() {
             console.log(this.addTodo)
             if (this.newTodo !== "") {
                 this.todos.push({

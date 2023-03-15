@@ -29,7 +29,7 @@
                 <div class="col my-5">
                     <div class="input-group">
                         <input v-model="newTodo" type="text" class="form-control"
-                            placeholder="Aggiungi un nuova cosa da fare">
+                            placeholder="Aggiungi un nuova cosa da fare" v-on:keyup.enter="addTodo">
                         <button class="btn btn-primary" @click="addTodo">Aggiungi</button>
                     </div>
                 </div>
