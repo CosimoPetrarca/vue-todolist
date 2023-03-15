@@ -5,6 +5,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            title: " Vue To Do List",
+            
             newTodo: "",
 
             todos: [
