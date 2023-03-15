@@ -22,12 +22,19 @@
 </head>
 
 <body>
+    <div id="app">
+        <div class="d-flex flex-column align-items-center">
+            <ul v-for="(todo, index) in todos" class="list-group">
+                <li class="list-group-item ">{{todo.text}}</li>
+            </ul>
+        </div>
+    </div>
 
 
 
 
 
-    
+
     <!-- cdn vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- /cdn vue -->
