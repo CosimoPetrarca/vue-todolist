@@ -32,6 +32,13 @@ createApp({
                 }
             ]
         }
+    },
+
+    /* eliminare dalla lista */
+    methods: {
+        removeTodo(index){
+            this.todos.splice(index, 1);
+        }
     }
 
 }).mount('#app')
