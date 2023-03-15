@@ -5,6 +5,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            newTodo: "",
+
             todos: [
                 {
                     text: 'Andare a fare la spesa',
@@ -38,6 +40,18 @@ createApp({
     methods: {
         removeTodo(index){
             this.todos.splice(index, 1);
+        },
+
+        /* eliminare dalla lista */
+        addTodo(){
+            console.log(this.addTodo)
+            if (this.newTodo !== "") {
+                this.todos.push({
+                    text: this.newTodo,
+                    done: false
+                });
+                this.newTodo = "";
+            }
         }
     }
 

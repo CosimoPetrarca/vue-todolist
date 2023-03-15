@@ -25,17 +25,17 @@
     <div id="app">
         <div class="container">
             <div class="row">
-                <div class="col my-3">
+                <div class="col my-5">
                     <div class="input-group">
-                        <input v-model="newTodoText" type="text" class="form-control"
+                        <input v-model="newTodo" type="text" class="form-control"
                             placeholder="Aggiungi un nuova cosa da fare">
-                        <button class="btn btn-primary">Aggiungi</button>
+                        <button class="btn btn-primary" @click="addTodo">Aggiungi</button>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col my-5">
+                <div class="col my-3">
                     <ul v-for="(todo, index) in todos" class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center"
                             v-bind:class="{ 'text-decoration-line-through': todo.done }">{{todo.text}}
