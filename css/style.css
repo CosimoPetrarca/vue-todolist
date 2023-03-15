@@ -3,3 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+li.text-decoration-line-through {
+    background-color: pink;
+  }
