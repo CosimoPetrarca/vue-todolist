@@ -28,10 +28,11 @@ createApp({
                 },
                 {
                     text: 'Portare la macchina al lavaggio',
-                    done: false
+                    done: true
                 }
             ]
         }
     }
 
 }).mount('#app')
+

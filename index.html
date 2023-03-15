@@ -23,11 +23,21 @@
 
 <body>
     <div id="app">
-        <div class="d-flex flex-column align-items-center">
-            <ul v-for="(todo, index) in todos" class="list-group">
-                <li class="list-group-item ">{{todo.text}}</li>
-            </ul>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col my-5">
+                    <ul v-for="(todo, index) in todos" class="list-group">
+                        <li class="list-group-item" v-bind:class="{ 'text-decoration-line-through': todo.done }">{{todo.text}}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+
+
+
     </div>
 
 
